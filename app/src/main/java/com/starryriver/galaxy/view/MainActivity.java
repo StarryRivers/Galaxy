@@ -59,10 +59,6 @@ public class MainActivity extends BaseActivity {
         }
 //        mainViewModel.getMpData();
 //        mainBinding.rvMain.setAdapter(mainViewModel.mainAdapter);
-        /*mainBinding.rlConversationGroup.setOnClickListener(this);
-        mainBinding.rlContactGroup.setOnClickListener(this);
-        mainBinding.rlLiveGroup.setOnClickListener(this);
-        mainBinding.rlMeGroup.setOnClickListener(this);*/
     }
 
     /**
