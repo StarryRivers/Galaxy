@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteGray">#F7F7F7</color>
+
+    <!-- 底部状态栏字体颜色 -->
+    <color name="tab_text_selected_color">#006EFF</color>
+    <color name="tab_text_normal_color">#888888</color>
+    <color name="unread_red_point">#f74c31</color>
+</resources>

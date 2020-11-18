@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".view.MainActivity" >
+
+        <!-- 主体 -->
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- 底部状态栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:background="@color/whiteGray" >
+
+            <RelativeLayout
+                android:id="@+id/rl_conversation_group"
+                android:onClick="switchTabClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_conversation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/message"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@color/tab_text_selected_color"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/conversation_selected"
+                    android:drawablePadding="3dp" />
+                <com.starryriver.galaxy.ui.UnreadCountTextView
+                    android:id="@+id/msg_total_unread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:minWidth="18.4dp"
+                    android:minHeight="18.4dp"
+                    android:textColor="#fff"
+                    android:textSize="13.6sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_contact_group"
+                android:onClick="switchTabClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friends"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/contact_normal"
+                    android:drawablePadding="3dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_live_group"
+                android:onClick="switchTabClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/live"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/live_normal"
+                    android:drawablePadding="3dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_me_group"
+                android:onClick="switchTabClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/myself_normal"
+                    android:drawablePadding="3dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
